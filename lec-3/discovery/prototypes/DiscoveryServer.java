@@ -11,7 +11,7 @@ import java.util.Hashtable;
 
 import javax.swing.LookAndFeel;
 
-public class DiscoverServer {
+public class DiscoveryServer {
 	public static Hashtable<String, String> ConvAndIp = new Hashtable<String, String>();
 
 	public static void process(Socket clientSocket) throws IOException {
