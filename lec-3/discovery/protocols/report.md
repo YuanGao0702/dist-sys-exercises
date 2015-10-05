@@ -22,8 +22,13 @@ zhangwei
   Failure: Failure: Duplication of Conversion!
 
 2. Remove ip&port of the conversion from the Discovery Server by using command "remove unit1 unit2 xxx.xxx.xxx.xxx yyyy"
-Success: Servers Updated!
-Failure: Failture: not exists!(There is no server you can remove)
 
+  Success: Servers Updated!
 
-3.
+  Failure: Failture: not exists!(There is no server you can remove)
+
+3. Look up conversion from the Discovery Server by using command "lookup unit1 unit2"
+
+  Return: "xxx.xxx.xxx.xxx yyyy" or "None"(There is no existed server support this conversion)
+  
+ALL COMMANDS ARE NOT CASE SENSITIVE!
