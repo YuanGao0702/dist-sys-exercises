@@ -17,10 +17,9 @@ zhangwei
 
 1. Add new conversion to the Discovery Server by using command "add unit1 unit2 xxx.xxx.xxx.xxx yyyy"
 
-Success: Servers Updated!
+  Success: Servers Updated!
 
-Failure: Failure: Duplication of Conversion!
-
+  Failure: Failure: Duplication of Conversion!
 
 2. Remove ip&port of the conversion from the Discovery Server by using command "remove unit1 unit2 xxx.xxx.xxx.xxx yyyy"
 Success: Servers Updated!
