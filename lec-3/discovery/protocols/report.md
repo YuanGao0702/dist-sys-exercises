@@ -1,10 +1,10 @@
 ***Team Member***
 
-Yuan Gao
-Bei Xia
-Wenhui Zhang
-chenghuhe
-Maotong Xu
+Yuan Gao,
+Bei Xia,
+Wenhui Zhang,
+chenghuhe,
+Maotong Xu,
 zhangwei
 
 ***Capabilities of your system***
