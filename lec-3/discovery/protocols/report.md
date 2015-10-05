@@ -36,6 +36,7 @@ zhangwei
 ALL COMMANDS ARE NOT CASE SENSITIVE!
 
 ***Test***
+
 1. javac DiscoveryServer.java
   
   java DiscoveryServer
