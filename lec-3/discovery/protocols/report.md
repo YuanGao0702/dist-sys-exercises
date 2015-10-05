@@ -9,10 +9,11 @@ zhangwei
 
 ***Capabilities of your system***
 
-1. Add conversion to the Discovery Server when the conversion server start up.
-2. Remove conversion from the Discovery Server when the conversion server shut down.
-3. Look up conversions from the Discovery Server.
+1. Add conversion servers to the Discovery Server when the conversion servers start up.
+2. Remove servers from the Discovery Server when the conversion servers shut down.
+3. Look up conversion servers from the Discovery Server.
 4. Check the duplication when register new servers.
+5. Remove the conversion when all of its servers got removed.
 
 ***Protocols***
 
@@ -39,10 +40,34 @@ ALL COMMANDS ARE NOT CASE SENSITIVE!
   
   java DiscoveryServer
 
+  (Default Port: 1111)
+
 2. javac ConvServer.java
 
   java ConvServer
   
+  (Default Port: 3333, this is $ <--> oz conversion)
+  
+  (ConvServer add into the DiscoveryServer)
+  
 3. javac ProxyServer.java
 
   java ProxyServer
+  
+  (Default Port: 2222)
+  
+4. telnet 127.0.0.1 2222
+
+  input "$ oz"
+  
+  return ip&port of conversion "$ oz"
+  
+5. input q in the terminal of ConvServer
+
+  (Server removed from the DiscoveryServer)
+  
+6. telnet 127.0.0.1 2222
+
+  input "$ oz"
+  
+  return "None" (Because the server shut down)
