@@ -63,7 +63,7 @@ ALL COMMANDS ARE NOT CASE SENSITIVE!
   
   return ip&port of conversion "$ oz"
   
-5. input q in the terminal of ConvServer
+5. input "q" in the terminal of ConvServer
 
   (Server removed from the DiscoveryServer)
   
