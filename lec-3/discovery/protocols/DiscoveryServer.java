@@ -91,18 +91,18 @@ public class DiscoveryServer {
 		String conv1 = conversion[1] + " " + conversion[0];
 		ArrayList<String> ip_port;
 		// default: return first ip&port
-		if (Conv_Address.get(conv) != null)
+		if (Conv_Address.get(conv) != null) {
 			return Conv_Address.get(conv).get(0);
-		else if (Conv_Address.get(conv1) != null)
+		} else if (Conv_Address.get(conv1) != null) {
 			return Conv_Address.get(conv1).get(0);
-		else
+		} else {
 			return "None";
+		}
 	}
-
 
 	public static String add(String conversion, String address) {
 		// check whether the conversion exists
-		if (lookup(conversion) != "None") {
+		if (!lookup(conversion).equals("None")) {
 			// check whether the address exists
 			if (Address_Conv.get(address) != null) {
 				return "Failure: Duplication of Conversion!";
@@ -151,6 +151,8 @@ public class DiscoveryServer {
 					Conv_Address.get(conversion).remove(i);
 				}
 			}
+			if (Conv_Address.get(conversion).isEmpty())
+				Conv_Address.remove(conversion);
 			return "Success: Servers Updated!";
 		} else {
 			return "Failture: not exists!";
@@ -159,7 +161,6 @@ public class DiscoveryServer {
 
 	public static void main(String[] args) throws IOException {
 		// test
-	
 		//
 		int port = 1111;
 		ServerSocket serverSocket = new ServerSocket(port);
