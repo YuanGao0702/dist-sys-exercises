@@ -57,9 +57,9 @@ public class ProxyServer {
 		PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
 		BufferedReader reader = new BufferedReader(streamReader);
 
-		out.println("lookup "+str1 + " " + str2);
+		out.println("lookup " + str1 + " " + str2);
 		out.println();
-		for (int i = 0; i < 3; i++) {
+		for (int i = 0; i < 6; i++) {
 			reader.readLine();
 		}
 		String result = (reader.readLine());
