@@ -155,7 +155,7 @@ public class DiscoveryServer {
 				Conv_Address.remove(conversion);
 			return "Success: Servers Updated!";
 		} else {
-			return "Failture: not exists!";
+			return "Failure: not exists!";
 		}
 	}
 
